@@ -147,7 +147,7 @@ int main()
 
 	// Iterate over /usr (!/usr/local) and /lib, /lib64, /sbin
 	// and find things not in the database
-	const char *dirs[] = { "/usr", "/lib", "/lib64", "/sbin", NULL };
+	const char *dirs[] = { "/usr", "/lib", "/lib64", "/bin", "/sbin", NULL };
 	const char *filter_dirs[] = { "/usr/local", NULL };
 
 	for (const char * const * dir = dirs; *dir != NULL; ++dir)
