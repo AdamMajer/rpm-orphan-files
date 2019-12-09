@@ -1,11 +1,11 @@
 SOURCES = rpmorphan.c
 
-all: rpmorphan
+all: rpm-orphan-files
 
 rpmorphan: ${SOURCES}
-	gcc -o rpmorphan ${CFLAGS} ${SOURCES} -lrpm
+	gcc -o rpm-orphan-files ${CFLAGS} ${SOURCES} -lrpm
 
 clean:
-	rm -f rpmorphan
+	rm -f rpm-orphan-files
 
 
