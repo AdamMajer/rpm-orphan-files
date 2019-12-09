@@ -2,7 +2,7 @@ SOURCES = rpmorphan.c
 
 all: rpm-orphan-files
 
-rpmorphan: ${SOURCES}
+rpm-orphan-files: ${SOURCES}
 	gcc -o rpm-orphan-files ${CFLAGS} ${SOURCES} -lrpm
 
 clean:
